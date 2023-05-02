@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+
+
+/* 템플릿 header#header 시작 */
+/*
+header#header {
+	border: 1px solid #000;
+}
+*/
+#header>* {
+	/*border: 1px solid #f80;*/
+	margin: 0 20px;
+}
+#header>nav#gnb {
+	padding: 10px;
+	flex: 1;
+}
+#header>#gnb>ul#mainMenu {
+	height: 80px;
+	/*border: 2px solid #08f;*/	
+	align-items: center;	
+	justify-content: center;
+}
+#header>#gnb>#mainMenu>li:nth-child(2n-1) {
+	width: 100px;
+	/*border: 1px solid #000;*/
+}
+#header>#gnb>#mainMenu>li:nth-child(2n) {
+	margin: 0 10px;
+}
+#header>#gnb>#mainMenu>li>a {
+	color: #555;
+	width: 100px;
+	font-size: 18px;
+	text-align: center;
+	display: inline-block;
+}
+#header>#gnb>#mainMenu>li:hover>a {
+	font-weight: bold;
+}
+/* 템플릿  header#header 끝 */
+
+
+/*  템플릿 main#main nav#mainLNB 시작 */
+main#main>div#lnb>nav#mainLNB>ul#lnbMainMenu>li {
+	width: 140px;
+	border: 1px solid #000;
+}
+main#main>#lnb>#mainLNB a {
+	width: 140px;
+	height: 36px;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: right;
+	padding-right: 30px;
+	display: inline-block;
+}
+main#main>#lnb>#mainLNB li:hover>a {
+	font-weight: bold;
+}
+/* 템플릿  main#main nav#mainLNB 끝 */
+
+
+
+
+/*  템플릿 footer#footer 시작 */
+footer#footer a, 
+footer#footer address {
+	font-size: 13px;
+	text-align: center;
+}
+
+#footer>nav#footerGNB>ul#footerMainMenu {
+	justify-content: center;
+}
+/*
+#footer>nav#footerGNB>ul#footerMainMenu>li {
+	border: 1px solid #000;
+}
+*/
+#footer>nav#footerGNB>ul#footerMainMenu>li:nth-child(2n) {
+	margin: 0 10px;
+}
+#footer>nav#footerGNB>ul#footerMainMenu>li:hover>a {
+	font-weight: bold;
+}
+
+#footer>.dFlex {
+	margin: 4px;
+	justify-content: center;
+}
+#footer>.dFlex>* {
+	margin: 0 10px;
+}
+#footer>.dFlex>*::before {
+	content: "ㆍ";
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 3px;
+}
+/* 템플릿  footer#footer 끝 */
+
+
+

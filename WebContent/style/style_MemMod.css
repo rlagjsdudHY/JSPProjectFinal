@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url(/resource/style_Reset.css);
+
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1000px;
+    padding: 4px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin: 20px auto;
+}
+
+hr.sepLine {    /* Separate Line 경계선*/
+	border: none;
+	border-top: 1px solid #999;
+    margin: 12px 0;
+}
+/* div#wrap 끝 */
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*//////////// 회원정보수정 스타일 시작 /member/memberMod.jsp //////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+#wrap>form#modFrm {
+	text-align: center;
+	/*border: 1px solid #000;*/
+}
+#wrap>#modFrm>div#formArea>button {
+	color: #fff;
+	font-size: 20px;	
+	padding: 6px 20px;
+	border: none;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	background-color: #0080ff;
+	cursor: pointer;
+}
+
+#wrap>#modFrm>#formArea>button:hover {
+	color: #f6f6f6;
+}
+
+
+main#main {
+	justify-content: center;
+	/* border: 5px solid #08f; */
+}
+
+div#wrap>main#main>div.memUpdate>form#modFrm {
+	width: 860px;
+	padding: 4px;
+	/* border: 1px solid #f80; */
+	margin: 0 auto;
+}
+
+#wrap #modFrm>table#modFrmTbl {
+	width: 100%;
+	/*border: 1px solid #ccc;*/
+	border-collapse: collapse; 	
+} 
+
+#wrap #modFrm>#modFrmTbl>caption {
+	color: #f3f3f3;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 13px;
+	border: 3px solid rgba(0, 127, 255, 0.12);
+	background-color: rgba(0, 127, 255, 0.5);
+}
+
+#wrap #modFrm>#modFrmTbl td {	
+	height: 48px;
+	padding: 10px 6px;
+	border-bottom: 1px solid #ccc;
+}
+#wrap #modFrm>#modFrmTbl td:first-child {
+	width: 140px;	
+	padding-left: 14px;
+} 
+#wrap #modFrm>#modFrmTbl td:nth-child(2) {
+	width: 500px;	
+} 
+
+#wrap #modFrm>#modFrmTbl td:last-child>span {
+	color: #888;
+	font-size: 13px;
+} 
+
+
+#wrap #modFrm>#modFrmTbl td input {
+	font-size: 17px;
+	padding: 3px 10px;
+}
+
+	/* 회원가입 필수 입력 시작 */
+#wrap #modFrm>#modFrmTbl td.req::after {
+	content: " *";
+	color: #f80;
+} 	
+	/* 회원가입 필수 입력 끝 */
+	
+	
+	/* 이메일 인증코드 입력 시작 */
+#wrap #modFrm>#modFrmTbl td div#emailAuthArea {
+	margin-top: 10px;
+	
+	display: none;
+}	
+	/* 이메일 인증코드 입력 끝 */
+	
+	
+	/* 우편번호 아웃라인 제거 */
+#wrap #modFrm>#modFrmTbl td>input#uzipcode {
+	outline: none;
+}	
+
+	/* 회원가입 버튼 공통 스타일 */
+#wrap #modFrm>#modFrmTbl button.frmBtn {
+	font-size: 15px;
+	padding: 4px 14px 5px;
+	
+	cursor: pointer;
+	transform: translateY(-1px);
+}	
+
+	/* 회원가입 드롭다운메뉴(Select 태그) 공통 스타일 */
+#wrap #modFrm>#modFrmTbl select.frmDropMenu {
+	font-size: 15px;
+	padding: 4px 7px 5px;
+	outline: none;	
+}	
+
+	/* 회원가입 label 좌우 여백 적용 */
+#wrap #modFrm>#modFrmTbl label {
+	margin: 0 6px;
+}
+
+	/* 회원가입 체크박스, 라디오버튼 크기 설정 */
+#wrap #modFrm>#modFrmTbl label>input {
+	width: 18px;
+	height: 18px;
+	
+	transform: translateY(4px);
+}
+
+	/* 회원가입, 리셋, 로그인 버튼 가운데 정렬 */
+#wrap #modFrm>#modFrmTbl tr:last-child>td {
+	text-align: center;
+	padding-top: 30px;
+	border-bottom: none;
+}	
+	
+	
+	
+/*////////////////////////////////////////////////////////////////////*/
+/*//////////// 회원정보 수정 스타일 끝 /member/memberMod.jsp //////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*//////// 패스워드 확인 스타일 시작 /member/memberMod.jsp //////// */
+/*////////////////////////////////////////////////////////////////////*/
+#wrap #modFrmTbl input#pwView {
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	
+	transform: translateY(3px);
+}
+
+#wrap #modFrmTbl span#pwChk {
+	color: #f80;
+	font-size: 14px;
+	margin-left: 10px;
+}
+/*////////////////////////////////////////////////////////////////////*/
+/*//////// 패스워드 확인 스타일 끝 /member/memberMod.jsp //////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///// 우편번호 찾기 팝업 스타일 시작 /member/zipCheck.jsp ///// */
+/*////////////////////////////////////////////////////////////////////*/
+
+div#wrap_zipcodePopup {
+	width: 590px;
+	height: auto;
+	text-align: center;
+	padding: 10px;
+	border: 2px solid #aaa;
+	border-radius: 6px;
+	margin: 20px 20px 2px;
+}
+#wrap_zipcodePopup>h1 {
+	text-align: center;
+	margin: 10px;
+}
+
+#wrap_zipcodePopup button {
+	cursor: pointer;
+}
+
+#wrap_zipcodePopup>form#zipFrm>table#zipFrmTbl {
+	width: 100%;
+	/*border: 1px solid #000;  */
+}
+
+#wrap_zipcodePopup #zipFrmTbl td#searchInputArea>* {
+	font-size: 18px;
+	padding: 2px 10px;
+	margin: 0 4px;
+}
+#wrap_zipcodePopup #zipFrmTbl td>hr {
+	margin: 6px 0 20px;
+}
+
+#wrap_zipcodePopup #zipFrmTbl td#zipResArea>span {
+	font-size: 20px;
+}
+
+#wrap_zipcodePopup #zipFrmTbl table#zipResTbl {
+	width: 100%;
+	margin-top: 20px;
+}
+#wrap_zipcodePopup #zipFrmTbl table#zipResTbl td {
+	font-size: 18px;
+	text-align: left;
+	padding: 4px 0;	
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+
+#wrap_zipcodePopup #zipResTbl td:hover {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+	cursor: pointer;
+}
+#wrap_zipcodePopup #zipResTbl td:hover>span {
+	color: #595959;
+}
+/*////////////////////////////////////////////////////////////////////*/
+/*///// 우편번호 찾기 팝업 스타일 끝 /member/zipCheck.jsp ///// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+

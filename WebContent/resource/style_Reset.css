@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+/* Reset  */
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url(/resource/Nanum_Gothic/NanumGothic-Regular.ttf); 
+    
+}
+
+* {
+    color: #222;
+    font-family: "Nanum Gothic", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  배경색 필요할 경우 사용함
+body {  background-color: rgba(255, 255, 255, 0);  }
+*/
+
+a:link {    
+    color: #222;
+    text-decoration: none;  
+}
+a:visited {
+    color: #222;
+}
+a:hover {
+    color: #444;
+}
+a:active {
+    color: #444;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+header, nav, main, section, 
+article, aside, footer {
+    display: block;
+}    /* 시맨틱 요소를 인식하지 못하는 구버전 브라우저용 */
+
+.dFlex {
+    display: flex;
+}
+/* Reset  */

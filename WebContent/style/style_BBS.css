@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@import url(/resource/style_Reset.css);
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// BBS list 목록 시작 /bbs/list.jsp ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+div#wrap>main#main>div.bbsList {
+	width: 860px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+div.bbsList div#pageInfo {
+	width: 100%;
+	padding: 2px 10px;
+	margin-bottom: 4px;
+	justify-content: space-between;
+}
+
+div.bbsList table#boardList {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+div.bbsList th {
+	padding: 8px 2px;
+	background-color: rgba(0, 136, 255, 0.1);
+}
+
+div.bbsList th:first-child, div.bbsList th:last-child {
+	width: 70px;
+}
+
+div.bbsList th:nth-child(3) {
+	width: 150px;
+}
+
+div.bbsList th:nth-child(4) {
+	width: 140px;
+}
+
+div.bbsList td.spaceTd {
+	padding: 1px 0;
+	border: none !important;
+	background-color: rgba(136, 136, 136, 0.2);
+}
+
+div.bbsList tr.prnTr:hover {
+	background-color: rgba(0, 136, 255, 0.1);
+	cursor: pointer;
+}
+
+div.bbsList tr.prnTr:hover td {
+	color: #666;
+	font-weight: bold;
+}
+
+div.bbsList tr.prnTr>td {
+	text-align: center;
+	padding: 20px 2px 10px;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+div.bbsList tr.prnTr>td.subjectTd {
+	text-align: left;
+}
+
+
+
+/* 리스트 페이지 버튼 공통 스타일 시작 */
+div.bbsList button.listBtnStyle {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 6px;
+	cursor: pointer;
+}
+/* 리스트 페이지 버튼 공통 스타일 끝 */
+
+
+/* 리스트 /bbs/list.jsp 글쓰기, 검색 영역 시작 */
+div.bbsList tr#listBtnArea td {
+	padding-top: 20px;
+}
+
+div.bbsList form#searchFrm {
+	justify-content: flex-end;
+}
+
+div.bbsList form#searchFrm>div {
+	margin: 4px;
+}
+
+div.bbsList #searchFrm select, 
+div.bbsList #searchFrm input {
+	font-size: 16px;
+	padding: 2px 6px;
+}
+
+/* 리스트 /bbs/list.jsp 글쓰기, 검색 영역 끝 */
+
+
+
+/* 리스트 /bbs/list.jsp  페이징 영역 시작 */
+
+div.bbsList tr#listPagingArea td {
+	padding-top: 20px;
+}
+
+div.bbsList td#pagingTd {	
+	text-align: center;
+}
+div.bbsList td#pagingTd span {
+	width: 30px;
+	height: 30px;
+	font-weight: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+div.bbsList td#pagingTd span:hover {
+	color: #aaa;
+}
+
+div.bbsList td#pagingTd span.nowPageNum {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: rgba(136, 136, 136, 0.1);
+	cursor: default;
+}
+
+div.bbsList td#pagingTd span.moveBlockArea {
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	margin: 0 6px;
+	display: inline-block;
+}
+/* 리스트 /bbs/list.jsp  페이징 영역 끝 */
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// BBS list 목록 끝 /bbs/list.jsp ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// BBS 글쓰기 시작 /bbs/write.jsp ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+main#main>div.bbsWrite h2 {
+	text-align: center;
+	padding: 10px 0;	
+	margin-bottom: 20px;
+	background-color: rgba(0, 136, 255, 0.2);
+}
+
+#main>.bbsWrite table {
+	width: 100%;
+}
+
+#main>.bbsWrite table tbody td {
+	padding: 10px;
+	/*border: 1px solid #000;*/
+}
+#main>.bbsWrite table tbody td:first-child {
+	width: 100px;
+	font-weight: bold;
+	text-align: right;
+}
+
+
+#main>.bbsWrite table tfoot td hr {
+	border: 2px solid #ccc;
+}
+#main>.bbsWrite table tfoot td {
+	width: 100%;
+	text-align: center;
+	padding: 4px 0;
+	/*border: 1px solid #aaa;*/
+}
+
+
+#main>.bbsWrite td.req::after {
+	content: " *";
+	color: #d74;
+	font-weight: bold;
+}
+#main>.bbsWrite input#subject {
+	width: 579px;
+}
+
+
+::-webkit-file-upload-button {
+	font-weight: bold;
+	padding: 4px 10px;
+	cursor:pointer; 
+}
+
+
+#main>.bbsWrite textarea#content {
+	height: 140px;
+}
+
+#main>.bbsWrite label {
+	margin: 0 20px;
+	cursor: pointer;
+}
+#main>.bbsWrite label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+#main>.bbsWrite input,
+#main>.bbsWrite textarea  {
+	font-size: 17px;
+	padding: 4px 10px;
+}
+
+#main>.bbsWrite td.contentTD {
+	vertical-align: top;
+	padding-top: 30px;
+}
+
+
+#main>.bbsWrite span.spanFile {
+	padding: 10px;
+}
+
+
+#main>.bbsWrite label {
+	margin: 0 20px;
+	cursor: pointer;
+}
+#main>.bbsWrite label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main>.bbsWrite button {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*////////////////// BBS 글쓰기 끝 /bbs/write.jsp ////////////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///////////// BBS  게시글 상세보기 페이지 시작 /bbs/read.jsp ///////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+main#main>div.bbsRead h2 {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(0, 136, 255, 0.1);
+}
+
+#main>.bbsRead table#readTbl {
+	width: 100%;
+	border-collapse: collapse;
+}
+#main>.bbsRead tbody#readTblBody th,
+#main>.bbsRead tbody#readTblBody td {
+	padding: 14px 6px;	
+	border-bottom: 1px solid #eee;
+}
+
+
+                  /*다운로드 시작*/
+ #main>.bbsRead #readTblBody span#downloadFile:hover {
+ 	color: #555; 	
+ 	text-decoration: underline;
+ 	cursor: pointer;
+ 	display: inline-block;
+ 	transform: translateY(-1px);
+ }
+                  /*다운로드 끝*/
+
+
+#main>.bbsRead tbody#readTblBody th:nth-child(2n+1),
+#main>.bbsRead tbody#readTblBody td:nth-child(2n+1) {
+	width: 120px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(220, 220, 220, 0.2);
+} 
+#main>.bbsRead tbody#readTblBody td#readContentTd {
+	text-align: left;
+	vertical-align: top;
+	height: 160px;
+	padding: 20px;
+	background-color: #fff;
+}
+#main>.bbsRead tbody#readTblBody textarea#txtArea {
+	height: 160px;
+	border: none;   /* 테두리 선 제거*/
+	outline: none;   /* 클릭했을 때 나타나는 아웃라인 선 제거*/
+}
+
+#main>.bbsRead td#footTopSpace {
+	height: 30px;
+}
+
+#main>.bbsRead tfoot#readTblFoot td#articleInfoTd {
+	text-align: right;
+}
+#main>.bbsRead tfoot#readTblFoot td#hrTd {
+	height: 30px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+#main>.bbsRead tfoot#readTblFoot hr {
+	border: 2px solid #eee;
+	border-top-color: #ddd;
+}
+#main>.bbsRead tfoot#readTblFoot td#btnAreaTd {
+	text-align: center;
+}
+#main>.bbsRead tfoot#readTblFoot td#btnAreaTd button {
+	width: 110px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///////////// BBS  게시글 상세보기 페이지 끝 /bbs/read.jsp ///////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///////////// BBS 게시글 답변글 페이지 시작 /bbs/reply.jsp ///////////// */
+/*////////////////////////////////////////////////////////////////////*/
+
+main#main>div.reply h2 {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(0, 136, 255, 0.1);
+}
+
+
+#main>.reply table#replyTbl {
+	width: 100%;
+	border-collapse: collapse;
+}
+#main>.reply tbody#replyTblBody th,
+#main>.reply tbody#replyTblBody td {
+	padding: 14px 6px;	
+	border-bottom: 1px solid #eee;
+}
+
+
+#main>.reply tbody#replyTblBody th:nth-child(1),
+#main>.reply tbody#replyTblBody td:nth-child(1) {
+	width: 120px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(220, 220, 220, 0.2);
+} 
+
+#main>.reply td.req::after {
+	content: " *";
+	color: #d74;
+	font-weight: bold;
+}
+
+#main>.reply tbody#replyTblBody input {
+	padding: 5px 10px;
+}
+
+#main>.reply tbody#replyTblBody textarea#txtArea{
+	height: 160px;
+	padding: 10px;
+}
+
+#main>.reply tbody#replyTblBody textarea#ori_TxtArea {
+	height: 160px;
+	padding: 10px;
+	border: 1px solid #eee !important;	
+	outline: none;	
+	resize: none;   /* textarea 입력영역 크기고정 */
+} 
+
+#main>.reply span.ori_Txt {
+	font-size: 13px;
+	margin-left: 4px;
+}
+
+#main>.reply span.ori_Txt::before {
+	content: "•";
+}
+
+#main>.reply span#ori_SpanTxtArea {	
+	margin: 10px 0 4px 6px;
+	display: block;
+}
+
+#main>.reply td#footTopSpace {
+	height: 30px;
+}
+
+#main>.reply tfoot td#hrTd {
+	height: 30px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+#main>.reply tfoot hr {
+	border: 2px solid #eee;
+	border-top-color: #ddd;
+}
+#main>.reply tfoot td#btnAreaTd {
+	text-align: center;
+}
+#main>.reply tfoot td#btnAreaTd button {
+	width: 110px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 4px 20px;
+	cursor: pointer;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+/*///////////// BBS 게시글 답변글 페이지 끝 /bbs/reply.jsp ///////////// */
+/*////////////////////////////////////////////////////////////////////*/
